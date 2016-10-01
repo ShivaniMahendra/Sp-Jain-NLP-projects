@@ -18,7 +18,7 @@ out_file_freq = open("output_filepath.txt","w")
 user_input = input("Enter the number of words to be printed : ")    
 
 def no_of_words(n):
-        a = token_sort[1:n]
+        a = token_sort[1:n+1]
         for k in range(len(a)):
             freq_word = str(a[k]).lstrip("(").rstrip("')")
             out_file_freq.write(freq_word+"\n")
