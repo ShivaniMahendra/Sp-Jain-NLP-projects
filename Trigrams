@@ -1,5 +1,5 @@
 ##  Create trigrams Unclean
-output_file = open("C:\Users\Vedija Pillay\Documents\Vedija BDAP\NLP\Scripts\out_trigram_unclean.txt","w")
+output_file = open("out_trigram_unclean.txt","w")
 tgs = nltk.trigrams(token)
 
 fdist = nltk.FreqDist(tgs)
@@ -15,7 +15,7 @@ output_file.close()
 from nltk.corpus import stopwords
 stop = set(stopwords.words('english'))
 cleantoken_stop= [i for i in clean_token if i not in stop]  
-output_file = open("C:\Users\Vedija Pillay\Documents\Vedija BDAP\NLP\Scripts\out_trigram_clean.txt","w")
+output_file = open("out_trigram_clean.txt","w")
 tgs = nltk.trigrams(cleantoken_stop)
 
 fdist = nltk.FreqDist(tgs)
